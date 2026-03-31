@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Instamart Growth Marketing — Dashboard Hub</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif; background:#0d1117; color:#e1e4e8; min-height:100vh; }
+
+.header {
+    background:linear-gradient(135deg,#0d1b2a 0%,#1b2838 50%,#0d1b2a 100%);
+    padding:48px 40px 40px; text-align:center;
+    border-bottom:1px solid #30363d;
+}
+.header h1 { font-size:32px; font-weight:800; color:#fff; letter-spacing:-0.5px; }
+.header .sub { font-size:14px; color:#8b949e; margin-top:8px; }
+.header .badge { display:inline-block; margin-top:14px; padding:5px 14px; background:#58a6ff22; color:#58a6ff; border:1px solid #58a6ff44; border-radius:20px; font-size:12px; font-weight:600; }
+
+.grid {
+    display:grid; grid-template-columns:repeat(auto-fill, minmax(340px, 1fr));
+    gap:24px; padding:40px; max-width:1200px; margin:0 auto;
+}
+
+.card {
+    background:linear-gradient(135deg,#161b22,#1c2129);
+    border:1px solid #30363d; border-radius:16px;
+    padding:28px; transition:all .25s; cursor:pointer;
+    text-decoration:none; color:inherit; display:block;
+    position:relative; overflow:hidden;
+}
+.card:hover {
+    border-color:#58a6ff; transform:translateY(-4px);
+    box-shadow:0 12px 40px rgba(88,166,255,0.12);
+}
+.card::before {
+    content:''; position:absolute; top:0; left:0; right:0; height:4px;
+    border-radius:16px 16px 0 0;
+}
+.card:nth-child(1)::before { background:linear-gradient(90deg,#f85149,#f0883e); }
+.card:nth-child(2)::before { background:linear-gradient(90deg,#58a6ff,#56d364); }
+.card:nth-child(3)::before { background:linear-gradient(90deg,#3fb950,#56d364); }
+.card:nth-child(4)::before { background:linear-gradient(90deg,#d2a8ff,#58a6ff); }
+.card:nth-child(5)::before { background:linear-gradient(90deg,#f0883e,#f9ca24); }
+.card:nth-child(6)::before { background:linear-gradient(90deg,#8b949e,#c9d1d9); }
+
+.card-icon { font-size:36px; margin-bottom:14px; }
+.card-title { font-size:18px; font-weight:700; color:#fff; margin-bottom:8px; line-height:1.3; }
+.card-desc { font-size:13px; color:#8b949e; line-height:1.6; margin-bottom:16px; }
+
+.card-meta { display:flex; gap:12px; flex-wrap:wrap; }
+.tag { padding:4px 10px; border-radius:12px; font-size:11px; font-weight:600; }
+.tag-charts { background:#58a6ff22; color:#58a6ff; border:1px solid #58a6ff33; }
+.tag-tables { background:#3fb95022; color:#3fb950; border:1px solid #3fb95033; }
+.tag-insights { background:#d2a8ff22; color:#d2a8ff; border:1px solid #d2a8ff33; }
+.tag-size { background:#21262d; color:#8b949e; border:1px solid #30363d; }
+.tag-new { background:#f8514922; color:#f85149; border:1px solid #f8514933; }
+
+.footer {
+    text-align:center; padding:32px; font-size:12px; color:#484f58;
+    border-top:1px solid #21262d; margin-top:20px;
+}
+.footer a { color:#58a6ff; text-decoration:none; }
+
+@media(max-width:768px) {
+    .header { padding:32px 20px; }
+    .header h1 { font-size:24px; }
+    .grid { padding:20px; gap:16px; }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+    <h1>Instamart Growth Marketing</h1>
+    <div class="sub">Performance Analytics & Project Dashboards</div>
+    <div class="badge">6 Dashboards &bull; Feb–Mar 2026</div>
+</div>
+
+<div class="grid">
+
+    <a class="card" href="Meta_Ad_Payback_Analysis.html">
+        <div class="card-icon">💰</div>
+        <div class="card-title">Ad-Level Payback Analysis</div>
+        <div class="card-desc">Which ads are paying back? 457 ads analyzed by ROAS tier, with top performers, underperformers, scaling opportunities, and interactive spend-vs-ROAS scatter map.</div>
+        <div class="card-meta">
+            <span class="tag tag-new">NEW</span>
+            <span class="tag tag-charts">8 Charts</span>
+            <span class="tag tag-tables">8 Tables</span>
+            <span class="tag tag-insights">7 Insights</span>
+            <span class="tag tag-size">585 KB</span>
+        </div>
+    </a>
+
+    <a class="card" href="Meta_Creative_Funnel_Analysis.html">
+        <div class="card-icon">📊</div>
+        <div class="card-title">Creative Type Funnel Analysis</div>
+        <div class="card-desc">Full funnel view across Catalog, Static, UGC, Others. Pie charts, bar charts, efficiency quadrant, weekly trends, and "Others" sub-type deep dive.</div>
+        <div class="card-meta">
+            <span class="tag tag-new">NEW</span>
+            <span class="tag tag-charts">14 Charts</span>
+            <span class="tag tag-tables">3 Tables</span>
+            <span class="tag tag-insights">7 Insights</span>
+            <span class="tag tag-size">46 KB</span>
+        </div>
+    </a>
+
+    <a class="card" href="Instamart_Creative_Analysis.html">
+        <div class="card-icon">🎨</div>
+        <div class="card-title">Creative Performance (Meta + Google)</div>
+        <div class="card-desc">Ad-name level analysis across Meta and Google Ads. 13K+ Meta ads, 2K+ Google ads with campaign associations, creative types, message themes, and scaling opportunities.</div>
+        <div class="card-meta">
+            <span class="tag tag-tables">10 Tabs</span>
+            <span class="tag tag-size">917 KB</span>
+        </div>
+    </a>
+
+    <a class="card" href="Instamart_Project_Tracker.html">
+        <div class="card-icon">📋</div>
+        <div class="card-title">Martech & AI Project Tracker</div>
+        <div class="card-desc">76 project items tracked across priorities (P0/P1/P2), owners, channels, and status. Filterable, searchable, with expandable notes and dependencies.</div>
+        <div class="card-meta">
+            <span class="tag tag-tables">76 Items</span>
+            <span class="tag tag-charts">Filters</span>
+            <span class="tag tag-size">62 KB</span>
+        </div>
+    </a>
+
+    <a class="card" href="project-chimera-v2.html">
+        <div class="card-icon">🧬</div>
+        <div class="card-title">Project Chimera v2</div>
+        <div class="card-desc">Strategic project dashboard — second iteration with enhanced views and tracking.</div>
+        <div class="card-meta">
+            <span class="tag tag-size">67 KB</span>
+        </div>
+    </a>
+
+    <a class="card" href="project-chimera.html">
+        <div class="card-icon">🔬</div>
+        <div class="card-title">Project Chimera v1</div>
+        <div class="card-desc">Original strategic project dashboard.</div>
+        <div class="card-meta">
+            <span class="tag tag-size">59 KB</span>
+        </div>
+    </a>
+
+</div>
+
+<div class="footer">
+    Instamart Growth Marketing &bull; Swiggy &bull; Built with Claude Code
+</div>
+
+</body>
+</html>
